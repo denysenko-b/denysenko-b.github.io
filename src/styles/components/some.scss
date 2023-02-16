@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+a,
+button,
+.big-text,
+p,
+li,
+.text {
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $white;
+    font-style: normal;
+}
+
+h1 {
+    font-size: var(--title-font-size);
+    line-height: 100%;
+}
+
+h2,
+.big-text {
+    font-size: var(--big-font-size);
+}
+
+h1,
+h2,
+p,
+li,
+.text {
+    font-family: "Druk Cyr";
+    letter-spacing: 0.04em;
+    font-weight: 900;
+}
+
+li {
+    line-height: 160%;
+}
+
+strong,
+i {
+    color: $yellow;
+}
+
+section {
+    padding: 0 var(--section-offset);
+}

@@ -1,0 +1,91 @@
+// #loader {
+//     --percent: 0%;
+
+//     &.load {
+
+
+//         .ticker {
+//             &__element {
+//                 animation-play-state: paused;
+//             }
+//         }
+
+//         height: 100vh;
+//         font-size: 13.4vh;
+
+//         .loader__title {
+//             // display: block;
+//             width: 100vw;
+//             font-style: italic;
+//             font-weight: 900;
+//             color: transparent;
+//             -webkit-text-stroke: 2px $black;
+
+//             justify-content: space-evenly;
+
+//             &:before {
+//                 content: "";
+//                 display: block;
+
+//                 @include use-star-icon;
+//             }
+
+//             &:after {
+//                 margin-left: 0;
+//             }
+
+//             span {
+//                 $mini-padding: 0.1em;
+
+//                 padding-left: $mini-padding;
+//                 padding-right: $mini-padding;
+
+//                 display: inline-block;
+//                 position: relative;
+
+//                 &::before {
+//                     content: attr(data-text);
+//                     padding-left: $mini-padding;
+//                     display: block;
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     // height: 100%;
+
+//                     color: $black;
+//                     overflow: hidden;
+
+//                     width: var(--percent);
+
+//                     white-space: nowrap;
+//                 }
+
+//                 &:hover {
+//                     &::before {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     &.anim {
+//         .loader__title {
+//             span {
+//                 &::before {
+//                     transition: width 0.2s;
+//                 }
+//             }
+//         }
+
+//         .loader__title {
+//             transition: all ease .2s;
+//         }
+
+//         transition: height ease 0.3s;
+//     }
+// }
+
+// .preload {
+//     overflow: hidden;
+// }

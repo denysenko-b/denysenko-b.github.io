@@ -1,0 +1,39 @@
+.about {
+    &__ticker {
+        transform: rotate(-2deg);
+    }
+
+    & {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        margin-bottom: 1.25rem;
+    }
+
+    &__hello {
+        opacity: 0.9;
+    }
+
+    &__hello,
+    &__currently,
+    &__hobbies {
+        width: 50%;
+    }
+
+    // &__hello,
+    // &__hobbies {
+    //     align-self: flex-end;
+    // }
+
+    &__currently,
+    &__hobbies {
+        align-self: flex-end;
+    }
+
+    &__hobbies {
+        // width: calc(100% - var(--left-offset));
+        margin-bottom: 0;
+    }
+}

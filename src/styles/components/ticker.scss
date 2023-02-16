@@ -1,0 +1,120 @@
+.ticker {
+    --animation-duration: 60s;
+    font-size: var(--tiny-font-size);
+    color: $black;
+    font-weight: bold;
+
+    position: relative;
+    width: 100%;
+
+    height: 4em;
+
+    background-color: $yellow;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: var(--ticker-offset);
+    margin-bottom: var(--ticker-offset);
+
+    &:first-child,
+    &:last-child {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        font-family: "Montserrat";
+        font-size: 1em;
+        line-height: 100%;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+
+        margin-right: 2em;
+
+        will-change: transform;
+
+        &::after {
+            content: "";
+            margin-left: 2em;
+            @include use-star-icon;
+        }
+    }
+
+    &__element {
+        display: flex;
+        white-space: nowrap;
+        will-change: transform;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+    }
+
+    //animations
+
+    &__main {
+        animation: ticker__main var(--animation-duration)
+            calc(-1 * var(--animation-duration)) linear infinite;
+    }
+
+    &__ghost {
+        animation: ticker__ghost var(--animation-duration)
+            calc(-0.5 * var(--animation-duration)) linear infinite;
+    }
+
+    // .reverse {
+    //     .ticker {
+    //         &__main {
+    //             // animation-name: ticker__main__reverse;
+    //             transform-origin: left;
+    //             animation-direction: reverse;
+    //         }
+
+    //         &__ghost {
+    //             transform-origin: left;
+    //             // animation-name: ticker__ghost__reverse;
+    //             animation-direction: reverse;
+    //         }
+    //     }
+    // }
+}
+
+// @keyframes ticker__main__reverse {
+//     0% {
+//         transform: translateX(0%);
+//     }
+//     100% {
+//         transform: translateX(-200%);
+//     }
+// }
+
+// @keyframes ticker__ghost__reverse {
+//     0% {
+//         transform: translateX(-100%);
+//     }
+//     100% {
+//         transform: translateX(-300%);
+//     }
+// }
+
+@keyframes ticker__main {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes ticker__ghost {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}

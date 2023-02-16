@@ -1,0 +1,42 @@
+.arrow-pointer {
+    $size: 2.25rem;
+    $arrow-size: 0.875rem;
+
+    display: block;
+    width: $size;
+    height: $size;
+    background-color: $yellow;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        mask: url('../assets/images/arrow.svg');
+        mask-repeat: no-repeat;
+        mask-size: $arrow-size $arrow-size;
+        mask-position: center;
+    }
+
+    &__black {
+        background-color: $black;
+
+        &::after {
+            background-color: $yellow;
+        }
+    }
+
+    &__right {
+        &::after {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__45 {
+        &::after {
+            transform: rotate(-135deg);
+        }
+    }
+}
