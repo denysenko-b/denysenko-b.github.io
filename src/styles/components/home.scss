@@ -106,7 +106,9 @@
         opacity: .9;
     }
 
-    .arrow-pointer {
-        margin-top: 3.5rem;
+    &__button {
+        padding-top:3.5rem;
+
+        display: flex;
     }
 }
