@@ -77,7 +77,7 @@ export default () => {
 
     Array.from(document.getElementsByClassName("about__text")).forEach(
         (text, id) => {
-            const odd = id % 2 !== 0;
+            const first = id === 0;
             const x = window.innerWidth / 4;
 
             gsap.from(text, {
@@ -91,13 +91,13 @@ export default () => {
                 },
             });
             gsap.to(text, {
-                x: odd ? -x : x,
+                x: first ? -x : x,
                 scrollTrigger: {
                     scrub: 2,
 
                     trigger: text,
-                    start: "top +" + window.innerHeight / 4,
-                    end: "+500",
+                    start: "top +" + window.innerHeight / 3,
+                    end: "+100",
                 },
             });
         }
@@ -135,11 +135,6 @@ export default () => {
             });
         }
     );
-
-    // const characteristicsTrigger = document.querySelector(
-    //     ".characteristics__ticker"
-    // );
-
     const { height: chContainerHeight } = document
         .querySelector(".characteristics")
         .getBoundingClientRect();
@@ -177,40 +172,6 @@ export default () => {
                     opacity: 0,
                 });
             });
-
-            // gsap.from(pointer, {
-            //     translateX: "-300%",
-            //     scrollTrigger: {
-            //         scrub: 1,
-            //         trigger: characteristicsTrigger,
-            //     },
-            // });
-
-            // gsap.from(title, {
-            //     opacity: 0,
-            //     yPercent: 100,
-            //     scrollTrigger: {
-            //         scrub: 1,
-            //         trigger: characteristicsTrigger,
-            //     },
-            // });
-
-            // list.forEach((li, id) => {
-            //     const offset =
-            //         ((list.length - id + 1) * window.innerHeight * -1) /
-            //         (4 * list.length);
-            //     // const {height} = li.getBoundingClientRect();
-
-            //     gsap.from(li, {
-            //         x: -offset,
-            //         opacity: 0,
-            //         scrollTrigger: {
-            //             scrub: 1,
-            //             trigger: item,
-            //             end: "+300",
-            //         },
-            //     });
-            // });
         }
     );
 
@@ -256,10 +217,6 @@ export default () => {
                 y: 50,
                 scrollTrigger
             })
-
-            // delete scrollTrigger.end;
-
-            // scrollTrigger.endTrigger = moreWorksTrigger;
 
             gsap.from(pointer, {
                 opacity: 0,
