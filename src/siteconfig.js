@@ -11,12 +11,14 @@ export const CHARACTERISTICS = {
     skills: [
         "JavaScript",
         "TypeScript",
-        "React.js",
+        "React",
+        "Redux",
         "Node.js",
         ".NET",
         "ASP.NET",
         "SQL",
         "Git",
+        "CI/CD"
     ],
     tools: ["Visual Studio", "Visual Studio Code", "GitHub", "Notion", "Figma"],
 };
