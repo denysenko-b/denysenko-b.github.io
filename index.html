@@ -25,7 +25,7 @@
     <body class="preload">
 
         <main>
-            <%- include('/ticker', {items: ['.NET Developer', 'React.js Developer', 'WEB Developer', 'Native Developer', 'Fullstack Developer'], classes: {container: 'home__ticker'}}) %>
+            <%- include('/ticker', {items: ['.NET Developer', 'React.js Developer', 'WEB Developer', 'Fullstack Developer'], classes: {container: 'home__ticker'}}) %>
 
             <section class="home">
                 <div class="home__header">
@@ -47,14 +47,14 @@
                 <h1 class="home__title">
                     <span>
                         <span>
-                            I create <span class="set-text"><i>Websites</i><i>native app</i></span>
+                            I create <span class="set-text"><i>websites </i><i>services </i></span>
                         </span>
                     </span>
                     <span>
-                        <span> that your </span>
+                        <span> with great  </span>
                     </span>
                     <span>
-                        <span> customers love </span>
+                        <span> user experience </span>
                     </span>
                 </h1>
                 <div class="home__about">
@@ -62,7 +62,11 @@
                         My name is Bohdan. I help businesses and startups to create any digital products
                     </p>
                 </div>
-                <button class="arrow-pointer" id="home__scroll-down" aria-label="Scroll down"></button>
+                <div class="home__button">
+                    <div  class="stroke-hover">
+                        <button class="arrow-pointer" id="home__scroll-down" aria-label="Scroll down"></button>
+                    </div>
+                </div>
             </section>
 
             <%- include('/ticker', {items: ['about me'], classes: {container: 'about__ticker'}}) %>
@@ -109,7 +113,7 @@
             </section>
             <%- include('/ticker', {items: ['More work'], classes: {container: 'more-works__ticker'}}) %>
             <section class="more-works">
-                <%- include('/more-works__item', {title: "Github", href: links.github, count: 5}) %>
+                <%- include('/more-works__item', {title: "Github", href: links.github, count: 3}) %>
             </section>
         </main>
         <footer>
