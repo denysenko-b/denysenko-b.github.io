@@ -7,6 +7,7 @@ export const DOMAIN = "denysenko-b.github.io";
 export const URL = `https://${DOMAIN}`;
 export const SITENAME = "Portfolio";
 export const EMAIL = "bohdandenysenko.ua@gmail.com";
+export const CV = 'https://drive.google.com/file/d/1WB_sS0V5LU42l8X4Xmd9kTe9zTIn9mW6/view?usp=sharing';
 export const CHARACTERISTICS = {
     skills: [
         "JavaScript",
@@ -49,6 +50,7 @@ export default {
     URL,
     SITENAME,
     email: EMAIL,
+    cv: CV,
     characteristics: CHARACTERISTICS,
     links: LINKS,
 };
