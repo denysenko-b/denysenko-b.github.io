@@ -16,7 +16,7 @@
         // --stroke-width: 2px;
         // --arrow-pointer-border-width: 2px;
 
-        --logo-size: 1.8rem;
+        --logo-size: 1.5rem;
     }
 
     .home {
@@ -26,13 +26,13 @@
             .email {
                 a {
                     // display: none;
-                    span {
-                        display: none;
-                    }
+                    // span {
+                    //     display: none;
+                    // }
 
-                    &::after {
-                        content: "email";
-                    }
+                    // &::after {
+                    //     content: "email";
+                    // }
                 }
             }
         }
