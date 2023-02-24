@@ -47,11 +47,11 @@ export const social = {
 export const myWorks = [
     {
         title: "Storyteller",
-        href: "https://github.com/denysenko-b/storytellerua",
+        href: "https://github.com/denysenko-b/storytelller",
     },
     {
         title: "BloggerUP",
-        href: "#",
+        href: "https://github.com/denysenko-b/bloggerup",
         reverse: true
     },
     {
