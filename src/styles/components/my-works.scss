@@ -4,6 +4,8 @@
         transform: rotate(1deg);
     }
 
+    --logo-scale: 100%;
+
     &__item {
         --animation-duration: 600s;
         $icon-size: 6rem;
@@ -61,8 +63,14 @@
                 align-items: center;
                 justify-content: center;
 
+                // z-index: 9;
+
                 &__2 {
                     transform: scale(var(--icon-scale)) rotate(var(--icon-rotate2));
+                }
+
+                &:hover {
+                    // transform: scale(3);
                 }
 
                 // padding: 1.5rem 1rem;
@@ -70,11 +78,9 @@
                     max-height: 100%;
                     width: auto;
                     max-width: none;
-                }
 
-                // &:hover {
-                //     transform: scale(3);
-                // }
+                    height: var(--logo-scale);
+                }
 
                 transition: transform ease 0.3s;
             }
@@ -121,7 +127,7 @@
             .my-works__item__ticker {
                 &__main,
                 &__ghost {
-                    // animation-duration: calc(var(--animation-duration)*);
+                    // animation-duration: calc(var(--animation-duration)*0.1);
                     // animation-play-state: paused;
                 }
 
@@ -132,36 +138,31 @@
         }
     }
 
-    &__sport-club {
+    &__bloggerup {
         // --anim-dir: reverse;
-        background: #eea880;
+        background: #ff658c;
         transform: rotate(-1deg);
-        --icon-bg: #f1cab9;
-        --icon-rotate: -21deg;
-        --icon-rotate2: -15deg;
-    }
-
-    &__mediacatalog {
-        background: #84d0e8;
-        transform: rotate(1deg);
-        --icon-bg: #2c476a;
+        --icon-bg: #FF396A;
         --icon-rotate: -6deg;
         --icon-rotate2: 19deg;
+        --logo-scale: 60%;
     }
 
-    &__coursephone {
-        background: #ffcd92;
+    &__storyteller {
+        background: #84d0e8;
+        transform: rotate(1deg);
+        --icon-bg: #BEDAFA;
+        --icon-rotate: -21deg;
+        --icon-rotate2: -15deg;
+        --logo-scale: 45%;
+    }
+
+    &__chess {
+        background: #f0d9b5;
         transform: rotate(-2deg);
-        --icon-bg: #fff8b6;
+        --icon-bg: #b58863;
         --icon-rotate: -15deg;
         --icon-rotate2: -22deg;
-    }
-
-    &__waterfilter {
-        background: #84e8b2;
-        transform: rotate(1deg);
-        --icon-bg: #398580;
-        --icon-rotate: -19deg;
-        --icon-rotate2: -11deg;
+        --logo-scale: 60%;
     }
 }

@@ -7,7 +7,8 @@ export const DOMAIN = "denysenko-b.github.io";
 export const URL = `https://${DOMAIN}`;
 export const SITENAME = "Portfolio";
 export const EMAIL = "bohdandenysenko.ua@gmail.com";
-export const CV = 'https://drive.google.com/file/d/1WB_sS0V5LU42l8X4Xmd9kTe9zTIn9mW6/view?usp=sharing';
+export const CV =
+    "https://drive.google.com/file/d/1WB_sS0V5LU42l8X4Xmd9kTe9zTIn9mW6/view?usp=sharing";
 export const CHARACTERISTICS = {
     skills: [
         "JavaScript",
@@ -19,7 +20,7 @@ export const CHARACTERISTICS = {
         "ASP.NET",
         "SQL",
         "Git",
-        "CI/CD"
+        "CI/CD",
     ],
     tools: ["Visual Studio", "Visual Studio Code", "GitHub", "Notion", "Figma"],
 };
@@ -43,6 +44,22 @@ export const social = {
     },
 };
 
+export const myWorks = [
+    {
+        title: "Storyteller",
+        href: "https://github.com/denysenko-b/storytellerua",
+    },
+    {
+        title: "BloggerUP",
+        href: "#",
+        reverse: true
+    },
+    {
+        title: "Chess",
+        href: "https://github.com/denysenko-b/chess-react"
+    }
+];
+
 export default {
     ...seo,
     social,
@@ -53,4 +70,5 @@ export default {
     cv: CV,
     characteristics: CHARACTERISTICS,
     links: LINKS,
+    myWorks,
 };

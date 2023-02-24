@@ -112,7 +112,9 @@
             </section>
             <%- include('/ticker', {items: ['My works'], classes: {container: 'my-works__ticker'}}) %>
             <section class="my-works">
-
+                <% myWorks.forEach(projectData => {%>
+                    <%- include('/my-works__ticker', projectData) %>
+                <% })%>
             </section>
             <%- include('/ticker', {items: ['More work'], classes: {container: 'more-works__ticker'}}) %>
             <section class="more-works">
