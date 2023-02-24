@@ -2,24 +2,30 @@
     var repeatCount = 10;
     var reverse = reverse || false;
 
-    var block = images.map(({src, alt}, id) => {
-        const odd = id % 2 !== 0;
+    var src = title.toLowerCase() + '.svg';
+    var alt = title + ' logo';
 
-        return `
-    <div class="my-works__item__ticker__group">
-        <div class="my-works__item__ticker__title text stroke-hover-ch__black">
-            <span>${title}</span>
-        </div>
-        <div class="my-works__item__ticker__icon ${odd ? 'my-works__item__ticker__icon__2' : ''}">
-            <img src="./src/assets/images/my-works/${src}" alt="${alt}" />
-        </div>
-    </div>
-    `
-    })
+    var blocks = [];
+
+    for (let i = 0; i < 2; i++) {
+        const odd = i % 2 !== 0;
+
+        blocks.push(`
+            <div class="my-works__item__ticker__group">
+                <div class="my-works__item__ticker__title text stroke-hover-ch__black">
+                    <span>${title}</span>
+                </div>
+                <div class="my-works__item__ticker__icon ${odd ? 'my-works__item__ticker__icon__2' : ''}">
+                    <img src="./src/assets/images/my-works/${src}" alt="${alt}" />
+                </div>
+            </div>
+        `);
+    }
 
     var tickerBody = [];
 
-    for (let i = 0; i < repeatCount; i++) tickerBody.push(block);
+    for (let i = 0; i < repeatCount; i++)
+        tickerBody.push(blocks);
 
     tickerBody = tickerBody.flat(Infinity).join('');
 %>
