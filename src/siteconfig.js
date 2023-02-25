@@ -1,14 +1,12 @@
 export const seo = {
     title: "Bohdan Denysenko",
-    description:
-        ".NET Developer, React.js Developer, WEB & Native App Developer, Fullstack Developer",
+    description: "Hi! I'm Bohdan Denysenko, Fullstack Developer and Javascript Engineer.",
 };
 export const DOMAIN = "denysenko-b.github.io";
 export const URL = `https://${DOMAIN}`;
 export const SITENAME = "Portfolio";
 export const EMAIL = "bohdandenysenko.ua@gmail.com";
-export const CV =
-    "https://drive.google.com/file/d/1WB_sS0V5LU42l8X4Xmd9kTe9zTIn9mW6/view?usp=sharing";
+
 export const CHARACTERISTICS = {
     skills: [
         "JavaScript",
@@ -16,16 +14,16 @@ export const CHARACTERISTICS = {
         "React",
         "Redux",
         "Node.js",
-        ".NET",
-        "ASP.NET",
         "SQL",
+        "MongoDB",
         "Git",
         "CI/CD",
     ],
-    tools: ["Visual Studio", "Visual Studio Code", "GitHub", "Notion", "Figma"],
+    tools: ["Visual Studio Code", "GitHub", "Notion", "Figma"],
 };
 
 export const GITHUB = "https://github.com/denysenko-b";
+export const CV = "/Denysenko_CV.pdf";
 
 export const LINKS = {
     github: GITHUB,
@@ -52,12 +50,12 @@ export const myWorks = [
     {
         title: "BloggerUP",
         href: "https://github.com/denysenko-b/bloggerup",
-        reverse: true
+        reverse: true,
     },
     {
         title: "Chess",
-        href: "https://github.com/denysenko-b/chess-react"
-    }
+        href: "https://github.com/denysenko-b/chess-react",
+    },
 ];
 
 export default {
